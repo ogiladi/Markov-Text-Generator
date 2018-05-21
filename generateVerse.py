@@ -39,7 +39,7 @@ def main():
                 parser_karamazov = tp.TextParser('text_karamazov.txt')
                 generator_karamazov = mtg.TextGenerator(parser_karamazov)
             print
-            print generator_bible.generateSentence(numWords)
+            print generator_karamazov.generateSentence(numWords)
             print
         elif input == 5:
             break

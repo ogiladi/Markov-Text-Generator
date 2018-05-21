@@ -1,5 +1,4 @@
 import re
-LETTERS = re.compile(ur'[^a-z]')
 
 class TextParser:
 
@@ -12,7 +11,6 @@ class TextParser:
 
     def cleanWord(self, word):
         word = word.lower().decode('utf8')
-        # toRemove = ["'", '"', ':', '.', ',', ':', ';', '?', '!', '(', ')', '-']
         while len(word) > 0 and not word[0].isalpha():
             word = word[1:]
         while len(word) > 0 and not word[-1].isalpha():
